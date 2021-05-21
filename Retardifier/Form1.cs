@@ -70,7 +70,8 @@ namespace Retardifier
             int G = rand.Next(0, 255);
             int B = rand.Next(0, 255);
 
-            labelTitle.ForeColor = Color.FromArgb(A, R, G, B);
+            labelTitle.ForeColor = label1.ForeColor = label2.ForeColor = Color.FromArgb(A, R, G, B);
+           
         }
 
         private void trackBar1_Scroll(object sender, EventArgs e)

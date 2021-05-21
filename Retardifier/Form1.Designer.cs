@@ -35,12 +35,14 @@ namespace Retardifier
             this.labelTitle = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxInput
             // 
-            this.textBoxInput.Location = new System.Drawing.Point(93, 111);
+            this.textBoxInput.Location = new System.Drawing.Point(165, 111);
             this.textBoxInput.Name = "textBoxInput";
             this.textBoxInput.Size = new System.Drawing.Size(460, 23);
             this.textBoxInput.TabIndex = 0;
@@ -48,7 +50,7 @@ namespace Retardifier
             // 
             // textBoxOutput
             // 
-            this.textBoxOutput.Location = new System.Drawing.Point(93, 140);
+            this.textBoxOutput.Location = new System.Drawing.Point(165, 140);
             this.textBoxOutput.Name = "textBoxOutput";
             this.textBoxOutput.Size = new System.Drawing.Size(460, 23);
             this.textBoxOutput.TabIndex = 1;
@@ -73,7 +75,7 @@ namespace Retardifier
             // 
             this.trackBar1.Cursor = System.Windows.Forms.Cursors.No;
             this.trackBar1.Location = new System.Drawing.Point(12, 249);
-            this.trackBar1.Maximum = 100;
+            this.trackBar1.Maximum = 200;
             this.trackBar1.Minimum = 1;
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Size = new System.Drawing.Size(662, 45);
@@ -81,12 +83,32 @@ namespace Retardifier
             this.trackBar1.Value = 1;
             this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(35, 114);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 15);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "input";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(35, 143);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(124, 15);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "input, but it\'s retarded";
+            // 
             // Retardifier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(686, 306);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.textBoxOutput);
@@ -107,6 +129,8 @@ namespace Retardifier
         private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
